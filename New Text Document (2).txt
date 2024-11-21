@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST. Vincent Pallotti College of Engineering and Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        /* Header Styles */
+        .header-logo {
+            max-width: 100%;
+            height: auto;
+        }
+        header {
+            position: relative;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: none;
+            flex-direction: column;
+            background-color: rgba(246, 246, 246, 0.99);
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul.show {
+            display: flex;
+        }
+        nav ul li {
+            margin: 5px 0;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        /* Home Section */
+        #home {
+            padding: 50px 20px;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .home-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        .home-content p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        /* Menu Icon */
+        .menu-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            background-color: #dcd0d0;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+        }
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+        #about-us-vision-mission {
+            padding: 30px;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-us, .vision-mission {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .about-us .content, .vision-mission .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about-us .text-img, .about-us .text-content {
+            width: 100%;
+            padding: 10px;
+        }
+        .text-content p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .vision-mission .vm-heading h2 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        .vision-mission .content p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\Bhupendra\Downloads\logo.png" alt="pallotti logo" class="header-logo">
+    <header>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="C:\Users\Bhupendra\Downloads\campus_optimized.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="C:\Users\Bhupendra\Downloads\images.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="C:\Users\Bhupendra\Downloads\img_1679369975.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="C:\Users\Bhupendra\Downloads\img_1723544779.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <script src="scripta.js"></script>
+        <a href="registration.html" style="position: absolute; top: 10px; left: 10px; color: #ffffff; text-decoration: none;">Registration</a>
+        <div class="menu-icon" onclick="toggleMenu()">Menu</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mis_portal.html">Admissions</a></li>
+                <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
+                <li><a href="student_dashboard.html">Student Dashboard</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="fees-payment.html">Fees Payment</a></li>
+                <li><a href="login.html">MIS Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu').querySelector('ul');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to ST. Vincent Pallotti College of Engineering and Technology</h2>
+            <p>Where your journey toward a successful future begins. Your future starts here. Join one of the leading colleges in education and research as we commit to shaping innovative minds and fostering excellence.</p>
+            <p>At SVPCET, we offer a dynamic learning environment equipped with cutting-edge technology, state-of-the-art laboratories, and a highly qualified faculty dedicated to nurturing your potential.</p>
+            <p>Whether you aspire to be an engineer, a researcher, or a leader in the technological world, our comprehensive programs and vibrant campus life provide the perfect foundation for your personal and professional growth.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    <div id="about-us-vision-mission">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-7 about-us">
+                    <div class="heading-panel text-center">
+                        <h2>About Us<span class="arrow-pattern"></span></h2>
+                    </div>
+                    <div class="content row">
+                        <div class="col-12 col-md-4 text-img">
+                            <img src="C:\Users\Bhupendra\Downloads\ th.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-8 text-content">
+                            <p>St. Vincent Pallotti College of Engineering and Technology was established in 2004 by the Nagpur Pallottine Society. The College is accredited by NAAC with A grade. The College is affiliated to Nagpur University approved by the Director of Technical Education, Mumbai and AICTE, Government of India.</p>
+                            <a href="/pages/about-us" class="btn btn-theme-2 btn-sm">Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 vision-mission">
+                    <div class="vm-heading">
+                        <h2>Vision</h2>
+                    </div>
+                    <div class="content mb-4">
+                        <p>To develop a knowledge-based society with clarity of thoughts and charity at hearts to serve humanity with integrity.</p>
+                    </div>
+                    <div class="vm-heading">
+                        <h2>Mission</h2>
+                    </div>
+                    <div class="content">
+                        <p>To empower youth to be technocrats of tomorrow with absolute discipline, a quest for knowledge, and strong ethos to uphold the spirit of professionalism.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Email:</strong> info@nexusngp.edu.in</p>
+            <p><strong>Phone:</strong> +91 8308289242</p>
+            <p><strong>Address:</strong> Nexus College of Engineering & Technology, Nagpur, India.</p>
+        </div>
+        <p>&copy; 2024 Nexus College of Engineering and Technology. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

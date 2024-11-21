@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Center the table within the main section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Adjusts vertical centering within the viewport */
+}
+
+table {
+    width: 80%; /* Adjusts the width of the table */
+    border-collapse: collapse; /* Removes default spacing between table cells */
+    text-align: left;
+    margin: 20px 0; /* Adds space around the table */
+}
+
+table, th, td {
+    border: 1px solid #333; /* Adds border to table and cells */
+    padding: 10px; /* Adds padding to cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Light background for headers */
+}
+
+td {
+    background-color: #ffffff; /* Background color for table cells */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form button {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(248, 8, 12);
+    text-align: center;
+    padding: 10px;
+}
